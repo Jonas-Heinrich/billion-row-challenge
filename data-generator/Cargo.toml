@@ -1,0 +1,10 @@
+[package]
+name = "data-generator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap.workspace = true
+indicatif.workspace = true
+rand.workspace = true
+rand_distr.workspace = true

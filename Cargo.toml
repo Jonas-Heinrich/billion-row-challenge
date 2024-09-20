@@ -1,0 +1,24 @@
+[workspace]
+members = [
+  "data-generator",
+  "solution",
+]
+resolver = "2"
+
+# This is required for `flamegraph` profiling to work.
+[profile.release]
+debug = true
+
+[workspace.dependencies]
+data-generator = { path = "data-generator" }
+
+# Third-party dependencies
+
+# The clap crate is a command-line argument parser for Rust.
+clap = { version = "4", features = ["derive"] }
+# The indicatif crate can show progress bars in CLIs.
+indicatif = "0.17"
+# The rand crate has utilities for random number generation.
+rand = "0.8"
+# The rand_distr crate has probability distributions.
+rand_distr = "0.4"

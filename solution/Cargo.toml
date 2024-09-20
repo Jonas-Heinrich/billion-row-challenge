@@ -1,0 +1,11 @@
+[package]
+name = "solution"
+version = "0.1.0"
+authors = [
+  "<Please insert your name here. (Does not have to be your real name.)>",
+]
+default-run = "solution"
+edition = "2021"
+
+[dependencies]
+clap.workspace = true
