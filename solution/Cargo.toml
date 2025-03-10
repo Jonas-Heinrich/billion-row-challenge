@@ -2,10 +2,13 @@
 name = "solution"
 version = "0.1.0"
 authors = [
-  "<Please insert your name here. (Does not have to be your real name.)>",
+  "Jonas Heinrich",
 ]
 default-run = "solution"
 edition = "2021"
 
 [dependencies]
-clap.workspace = true
+# Faster parallel hashmap
+hashbrown = "0.15"
+# Util for getting the number of CPUs
+num_cpus = "1.14"
